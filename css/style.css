@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@font-face {
+    font-family: alarmFont;
+    src: url(../fonts/alarmclock.ttf);
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+input {
+    color: black;
+    width: 60%;
+}
+
+
+#Date {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #f00;
+}
+
+ul {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+    font-size: 10em;
+    text-align: center;
+    font-family: 'alarmFont', Arial, Helvetica, sans-serif;
+    color: #f00;
+}
+#ampm {
+    display: inline;
+    font-size: 2em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f00;
+}
+
+#point {
+    position: relative;
+    -moz-animation: mymove 1s ease infinite;
+    -webkit-animation: mymove 1s ease infinite;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Simple Animation */
+@-webkit-keyframes mymove {
+    0% {opacity: 1.0;
+    color: #f00;
+}
+
+50% {
+    opacity: 0;
+    text-shadow: none;
+}
+
+100% {
+    opacity: 1.0;
+    color: #f00;
+}	
+}
+
+@-moz-keyframes mymove {
+    0% {
+        opacity: 1.0;
+        color: #f00;
+    }
+
+    50% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    100% {
+        opacity: 1.0;
+        color: #f00;
+    };
+}
