@@ -49,7 +49,7 @@ setInterval( function() {
         hours += 12;
     }
     }, 1000);	
-    
+//displays whether it is currently AM or PM
 setInterval( function() {
     if (am) {
         $("#ampm").html("AM");
@@ -60,7 +60,12 @@ setInterval( function() {
        
 //function to set alarm when set alarm button clicked  
 $('#setAlarmButton').click(function() {
+    //assign URL var to user inputted url
     URL = $("#URL").val();
+    //ensures user has inputted a URL starting with HTTP so that it resirrects properly
+    if (URL.substring(0,4).toUpperCase() !== "HTTP") {
+        URL = "http://" + URL;
+    }
     alarmSet = true;
     updateAlarm();
 
