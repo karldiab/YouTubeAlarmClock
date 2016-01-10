@@ -34,13 +34,12 @@ select {
 }
 
 ul {
-    width: 800px;
+    width: auto;
     margin: 0 auto;
     padding: 0px;
     list-style: none;
     text-align: center;
 }
-
 ul li {
     display: inline;
     font-size: 8em;
@@ -50,6 +49,25 @@ ul li {
 }
 h1 {
    font-size: 6em; 
+}
+@media screen and (max-width: 600px) {
+    ul li {
+    font-size: 5em;
+    }
+    h1 {
+    font-size: 4em; 
+    }
+    #Date {
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 440px) {
+    ul li {
+    font-size: 4em;
+    }
+    h1 {
+    font-size: 3em; 
+    }
 }
 #ampm {
     display: inline;
